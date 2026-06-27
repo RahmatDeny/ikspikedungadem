@@ -9,7 +9,7 @@ bucket_name = "ikspi-kedungadem"
 
 # Variabel non-rahasia. FIREBASE_PROJECT_ID = Firebase project id.
 [vars]
-FIREBASE_PROJECT_ID = "ikspikedungadem-3a546"
+FIREBASE_PROJECT_ID = "ikspi-kedungadem"
 PUBLIC_BASE_URL = "https://pub-353a6ec7cdc54968ac8a818762fde9a2.r2.dev"
 
 # ADMIN_UIDS sebaiknya diset sebagai secret:
