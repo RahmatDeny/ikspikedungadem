@@ -1,0 +1,40 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "settings": {
+      ".read": true,
+      ".write": "auth != null && root.child('adminWhitelist').child(auth.uid).val() === true"
+    },
+    "berita": {
+      ".read": true,
+      ".write": "auth != null && root.child('adminWhitelist').child(auth.uid).val() === true",
+      ".indexOn": ["slug", "status", "tanggalPublish", "kategori"]
+    },
+    "subRanting": {
+      ".read": true,
+      ".write": "auth != null && root.child('adminWhitelist').child(auth.uid).val() === true",
+      ".indexOn": ["slug", "createdAt"]
+    },
+    "kepengurusan": {
+      ".read": true,
+      ".write": "auth != null && root.child('adminWhitelist').child(auth.uid).val() === true",
+      ".indexOn": ["parentId", "urutan"]
+    },
+    "verifikasi": {
+      ".read": true,
+      ".write": "auth != null && root.child('adminWhitelist').child(auth.uid).val() === true",
+      ".indexOn": ["slug", "createdAt"]
+    },
+    "verifikasiData": {
+      ".read": true,
+      ".write": "auth != null && root.child('adminWhitelist').child(auth.uid).val() === true",
+      ".indexOn": ["kode", "verId", "createdAt"]
+    },
+    "adminWhitelist": {
+      ".read": "auth != null",
+      ".write": false
+    }
+  }
+}

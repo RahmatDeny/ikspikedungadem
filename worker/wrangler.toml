@@ -1,0 +1,17 @@
+name = "ikspi-r2-uploader"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+# Binding ke bucket R2 (buat bucket di Cloudflare R2 lalu sesuaikan nama)
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "ikspi-kedungadem"
+
+# Variabel non-rahasia. FIREBASE_PROJECT_ID = Firebase project id.
+[vars]
+FIREBASE_PROJECT_ID = "ikspikedungadem-3a546"
+PUBLIC_BASE_URL = "https://pub-353a6ec7cdc54968ac8a818762fde9a2.r2.dev"
+
+# ADMIN_UIDS sebaiknya diset sebagai secret:
+#   npx wrangler secret put ADMIN_UIDS
+# (isi dengan UID admin, dipisah koma)

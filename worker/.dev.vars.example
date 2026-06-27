@@ -1,0 +1,2 @@
+# Salin ke .dev.vars untuk pengembangan lokal `wrangler dev`
+ADMIN_UIDS=uid_admin_1,uid_admin_2
